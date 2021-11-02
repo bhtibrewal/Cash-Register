@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(5, 99, 99);
+  padding:1rem;
+}
+input{
+  padding: .8rem;
+  margin:.5rem 1rem;
+}
+button{
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: .5rem 1rem ;
+}
+table{
+  margin: auto;
+  margin-top:2rem;
+}
+table caption{
+  padding :1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+table td{
+  background-color:white;
+  padding:.5rem;
+}
+th {
+background-color: rgb(52, 172, 172);
+padding:.5rem;
+}
