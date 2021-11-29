@@ -11,7 +11,7 @@ export default function App() {
   const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
   function clickHandler() {
-    if (Number(billAmount) > 0) {
+    if (Number(billAmount) > 0 && Number(cashGiven)>0) {
       if (Number(billAmount) <= Number(cashGiven)) {
         calculateChange(Number(cashGiven) - Number(billAmount));
       } else alert("Do You Wish To wash the dishes");
@@ -36,7 +36,7 @@ export default function App() {
   function validateCash(c) {
     setNumOfNotes(["", "", "", "", "", "", ""]);
     if (Number(c) <= 0) {
-      setErrorMessage2("The Bill Amount should be greater than 0.");
+      setErrorMessage2("The Cash Amount should be greater than 0.");
     } else setErrorMessage2(" ");
   }
 
